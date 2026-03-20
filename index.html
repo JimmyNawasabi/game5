@@ -243,7 +243,65 @@ const grandPrizes = [
 ];
 
 const taskDatabase = {
-    shibari: [{ text: "Master, tie the sub’s wrists to their ankles in a tight hogtie using **[Restraints]**. Apply **[Gags]**.", time: 420 }],
+    shibari: [{ text: "The Traditional Box: Master, tie the sub's arms in a 'Takate Kote' (box tie) using **[Restraints]**. Use a friction lock at the center of the spine. Success: Submissive must sit perfectly upright with shoulders pulled back.", time: 480 },
+    { text: "The Prayer Binding: Master, bind the sub's hands in a 'prayer' position in front. Use **[Restraints]** to loop from the wrists, over the neck, and back to the waist. Success: Submissive must keep their hands at chin level.", time: 360 },
+    { text: "The Winged Victory: Master, tie the sub's elbows together behind the back. Use **[Restraints]** to create a 'harness' across the chest. Success: Submissive must breathe deeply and rhythmically without the chest line tightening painfully.", time: 420 },
+    { text: "The Crossover Corset: Master, wrap **[Restraints]** around the torso in a diamond pattern. Tighten with every exhale. Success: Submissive must remain standing as a 'statue' while Master admires the pattern.", time: 540 },
+    { text: "The Reverse Prayer: Master, bind the sub's hands behind their back, palms together, fingers pointing up. Success: Submissive must stay in this high-tension stretch without their hands slipping down.", time: 300 },
+    { text: "The Neck-to-Waist Line: Master, tie a collar loop with **[Restraints]** and run the line down to a waist cinch. Success: Submissive must walk in a circle around the Master without the line pulling taut.", time: 240 },
+    { text: "The Triple Diamond: Master, create three distinct diamond shapes on the sub's back using **[Restraints]**. Success: Submissive must count the number of times the rope crosses their spine.", time: 360 },
+    { text: "The Bound Hug: Master, tie the sub's arms so they are hugging themselves tightly. Use **[Restraints]** to lock the wrists to opposite elbows. Success: Submissive must stay 'locked' in this self-embrace.", time: 420 },
+    { text: "The Elbow Lock: Master, bind only the elbows together behind the back, leaving the wrists free. Success: Submissive must use their free hands to serve the Master a drink or object.", time: 300 },
+    { text: "The Shoulder Shrug: Master, tie a heavy coil of **[Restraints]** around the sub's shoulders. Success: Submissive must maintain a shrugging posture to keep the coil from falling to their waist.", time: 180 },
+
+    // 11-20: LOWER BODY & LEG BINDINGS
+    { text: "The Mermaid Tail: Master, bind the sub's legs together from ankles to mid-thigh using a continuous spiral of **[Restraints]**. Success: Submissive must hop 5 times without losing balance.", time: 300 },
+    { text: "The Lotus Lock: Master, tie the sub in a cross-legged position. Use **[Restraints]** to bind the feet to the opposite thighs. Success: Submissive must meditate in silence.", time: 600 },
+    { text: "The High Kneel: Master, tie the sub's ankles to their own glutes while they are kneeling. Success: Submissive must remain upright on their knees, hands behind head.", time: 420 },
+    { text: "The Single Leg Suspension: Master, tie one leg in a 'Karada' (body) wrap and lift the foot 6 inches off the floor using **[Restraints]**. Success: Submissive must balance on one leg.", time: 240 },
+    { text: "The Ankle-to-Groin: Master, tie a line from the sub's bound ankles through the crotch to a neck collar. Success: Submissive must walk with 'mincing' steps as the line dictates.", time: 360 },
+    { text: "The Spread-Eagle Floor: Master, tie the sub's limbs to four heavy points (or furniture) using **[Restraints]**. Success: Submissive must stay perfectly flat and still while Master uses **[Sensation]**.", time: 480 },
+    { text: "The Frog Tie: Master, bind the sub's wrists to their ankles while they are in a deep squat. Success: Submissive must remain in this compact shape without tipping over.", time: 300 },
+    { text: "The Picket Fence: Master, tie 5 horizontal lines across the sub's thighs using **[Restraints]**. Success: Submissive must identify which line the Master is touching while wearing **[Blindfolds]**.", time: 240 },
+    { text: "The Toe-to-Wrist: Master, bind the sub's big toes to their wrists behind the back. Success: Submissive must maintain this 'bow' shape on their stomach.", time: 300 },
+    { text: "The Caliper Tie: Master, use **[Restraints]** to bind the legs wide apart. Success: Submissive must maintain the 'V' shape without their leg muscles shaking.", time: 360 },
+
+    // 21-30: FULL BODY & HARNESSES
+    { text: "The Hishigi (Diamond Harness): Master, create a full-body harness from chest to mid-thigh. Success: Submissive must 'present' each side of the harness for inspection.", time: 600 },
+    { text: "The X-Frame: Master, tie a large 'X' across the sub's front and back, connecting at the hips. Success: Submissive must perform 3 slow squats while the rope maintains tension.", time: 300 },
+    { text: "The Rope Dress: Master, use multiple lengths of **[Restraints]** to 'clothe' the submissive in rope patterns. Success: Submissive must pose for a 'photo' (mental or real) for 2 minutes.", time: 480 },
+    { text: "The Spiral Ascending: Master, start at the ankles and wrap a single line of **[Restraints]** all the way to the neck. Success: Submissive must unwind it by spinning in place.", time: 360 },
+    { text: "The Star Pattern: Master, create a 5-point star pattern on the submissive's chest. Success: Submissive must name the 5 points of their own submission.", time: 300 },
+    { text: "The Double Box: Master, tie a box tie on the arms AND a box tie on the legs. Success: Submissive must lie on their side and remain perfectly still.", time: 420 },
+    { text: "The Tethered Bird: Master, bind the sub's wrists together and attach a 4-foot 'leash' using **[Restraints]**. Success: Submissive must follow the Master's lead without the leash going taut.", time: 360 },
+    { text: "The Spine Alignment: Master, tie a vertical line down the spine, knotted at every vertebra. Success: Submissive must describe the feeling of the rope against their bone.", time: 300 },
+    { text: "The Bound Kneel: Master, bind the sub's wrists to their waist and their knees together. Success: Submissive must move from sitting to kneeling 5 times.", time: 240 },
+    { text: "The Rope Corset: Master, lace the sub's torso tightly like a Victorian corset. Success: Submissive must recite a poem or 'The Submissive's Oath' without losing breath.", time: 480 },
+
+    // 31-40: ARTISTIC & AESTHETIC 
+    { text: "The Shadow Play: Master, tie the sub in a complex pose. Success: Submissive must hold the pose while Master uses a light to project their 'rope shadow' on the wall.", time: 360 },
+    { text: "The Sensation Web: Master, weave **[Restraints]** between the sub's fingers and toes. Success: Submissive must move each digit individually as the Master calls them out.", time: 300 },
+    { text: "The Color Contrast: Master, use two different colors/types of **[Restraints]** to create a layered pattern. Success: Submissive must describe the visual beauty of their own 'cage'.", time: 420 },
+    { text: "The Flower Bloom: Master, tie the sub's hands behind their head and spread the fingers like petals. Success: Submissive must stay in this 'blossoming' pose.", time: 240 },
+    { text: "The Geometric Balance: Master, tie a square pattern on the front and a circle on the back. Success: Submissive must identify which shape is being touched by **[Sensation]**.", time: 300 },
+    { text: "The Minimalist: Master, use only one 3-foot length of **[Restraints]** to create the most restrictive tie possible. Success: Submissive must not be able to move their arms.", time: 180 },
+    { text: "The Symmetry Test: Master, tie the left side of the body, then the right. Success: Submissive must judge if the tension is perfectly equal on both sides.", time: 360 },
+    { text: "The Rope Crown: Master, weave a 'crown' or headband out of **[Restraints]** and tie it to a neck collar. Success: Submissive must keep their head perfectly level.", time: 240 },
+    { text: "The Silk Trail: Master, weave **[Sensation]** (silk scarf) into the rope patterns. Success: Submissive must describe the difference between the 'bite' of rope and 'softness' of silk.", time: 300 },
+    { text: "The Master's Signature: Master, tie a unique 'knot' that represents your bond. Success: Submissive must explain what that knot means to them.", time: 180 },
+
+    // 41-50: ENDURANCE & TENSION
+    { text: "The Suspension Prep: Master, tie a full-body harness and apply upward tension (no lifting). Success: Submissive must stand on tiptoes for 60 seconds to relieve the pressure.", time: 300 },
+    { text: "The Creaking Rope: Master, apply **[Restraints]** so tightly that they 'creak' when the sub moves. Success: Submissive must move until they produce 10 'creaks'.", time: 240 },
+    { text: "The Breath-Controlled Tie: Master, only tighten the rope when the submissive exhales. Success: Submissive must maintain calm, shallow breathing for the duration.", time: 480 },
+    { text: "The Pulse Tie: Master, tie **[Restraints]** around the wrists just tight enough to feel the pulse. Success: Submissive must remain still until the Master feels the heart rate drop.", time: 300 },
+    { text: "The Heavy Limbs: Master, tie small weights (or extra rope) to the sub's bound wrists. Success: Submissive must hold their arms out horizontally.", time: 180 },
+    { text: "The Friction Burn: Master, run a length of rope quickly through a friction lock near the sub's skin. Success: Submissive must not flinch from the heat/noise.", time: 120 },
+    { text: "The Total Immobility: Master, bind the sub from neck to toe until they are a 'mummy'. Success: Submissive must be carried or tilted by the Master without resisting.", time: 600 },
+    { text: "The One-Knot Wonder: Master, tie the sub using one continuous line and a single final knot. Success: Submissive must guess where that final knot is while blindfolded.", time: 300 },
+    { text: "The Rhythmic Snap: Master, snap the excess rope against the bound sub's skin rhythmically. Success: Submissive must hum in time with the snaps.", time: 240 },
+    { text: "The Masterpiece: Master, take 10 minutes to create your best work. Success: Submissive must remain a 'living statue' while the Master admires them from all angles.", time: 600 }]
+
     tease: [{ text: "Master, use **[Toys]** to bring the sub to the edge. Stop and apply **[Sensation]** (ice). Repeat 3 times.", time: 480 }],
     punish: [{ text: "Justice: 15 strikes with **[Impact]**. Mercy: Follow with a warm massage using **[Sensation]**.", time: 300 }],
     inner: [{ text: "Submissive, use **[Restraints]** to bind your own wrists together. Then, apply **[Gags]** to yourself.", time: 300 }],
