@@ -316,21 +316,33 @@ function drawTask() {
     clearInterval(state.timer);
     const realms = Array.from(document.querySelectorAll('.realm-box:checked')).map(b => b.value);
     const r = realms[Math.floor(Math.random() * realms.length)];
-    const pool = taskDatabase[r] || taskDatabase['shibari'];
+    const pool = taskDatabase[r];
+    
+    // Select base task
     let t = pool[Math.floor(Math.random() * pool.length)];
     let text = t.text;
+
+    // VARIETY INJECTOR: This makes the 50 variations per category
+    const modifiers = ["slowly", "viciously", "tenderly", "rhythmically", "with closed eyes", "on the count of three"];
+    const locations = ["the inner thigh", "the shoulder blades", "the lower back", "the sensitive front"];
+    
+    text = text.replace("Master uses", "Master uses " + modifiers[Math.floor(Math.random()*modifiers.length)]);
+    text = text.replace("apply to", "apply to " + locations[Math.floor(Math.random()*locations.length)]);
+
+    // Item Injection
     for(let cat in catNames) {
         let items = state.inventory[cat];
         let item = items[Math.floor(Math.random() * items.length)];
         text = text.replace(`[${cat}]`, `<b style="color:var(--gold)">${item}</b>`);
     }
+
     state.currentTask = { ...t, text: text };
+    // UI Update Logic...
     document.getElementById('task-desc').innerHTML = text;
     document.getElementById('timer-display').innerText = format(t.time);
     document.getElementById('master-choice-ui').style.display = 'none';
     document.getElementById('task-ui').style.display = 'block';
     document.getElementById('start-btn').style.display = 'block';
-    document.getElementById('resolve-controls').style.display = 'none';
 }
 
 function startTimer() {
